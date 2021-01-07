@@ -5,4 +5,5 @@ export enum DevEnv {
 
 export class DevConfig {
     NODE_ENV: DevEnv
+    BASE_URL: string
 }

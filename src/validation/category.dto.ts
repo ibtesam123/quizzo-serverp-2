@@ -3,8 +3,8 @@ import { IsOptional } from "class-validator"
 export class CategoryDTO {
 
     @IsOptional()
-    name: string
+    name?: string
 
     @IsOptional()
-    image: string
+    image?: string
 }

@@ -91,4 +91,8 @@ export class CategoryService {
             data: category,
         }
     }
+
+    async uploadImage(file: File): Promise<string> {
+        return 'hello in category service'
+    }
 }

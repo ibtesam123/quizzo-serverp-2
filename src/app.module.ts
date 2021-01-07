@@ -11,6 +11,7 @@ import { DBConfig } from './keys/db.config';
 import { Category } from './entity/category.entity';
 import { Question } from './entity/question.entity';
 import { Game } from './entity/game.entity';
+import { MulterModule } from '@nestjs/platform-express';
 
 @Module({
   imports: [
@@ -36,6 +37,7 @@ import { Game } from './entity/game.entity';
         entities: [User, Category, Question, Game],
       }),
     }),
+    MulterModule.register(),
   ],
 })
 export class AppModule { }

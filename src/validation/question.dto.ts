@@ -3,20 +3,20 @@ import { IsArray, IsNumber, IsOptional, MinLength } from "class-validator"
 export class QuestionDTO {
     @IsOptional()
     @MinLength(5)
-    question: string
+    question?: string
 
     @IsOptional()
     @IsArray()
-    options: string[]
+    options?: string[]
 
     @IsOptional()
     @IsNumber()
-    answer: number
+    answer?: number
 
     @IsOptional()
     image?: string
 
     @IsOptional()
     @IsNumber()
-    categoryID: number
+    categoryID?: number
 }
